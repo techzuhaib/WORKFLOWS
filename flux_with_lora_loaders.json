@@ -1,6 +1,6 @@
 {
-  "last_node_id": 14,
-  "last_link_id": 32,
+  "last_node_id": 16,
+  "last_link_id": 35,
   "nodes": [
     {
       "id": 9,
@@ -22,7 +22,7 @@
         "1": 106
       },
       "flags": {},
-      "order": 8,
+      "order": 9,
       "mode": 0,
       "inputs": [
         {
@@ -127,7 +127,7 @@
         "Node name for S&R": "RandomNoise"
       },
       "widgets_values": [
-        827979369672804,
+        415550007512066,
         "randomize"
       ]
     },
@@ -151,7 +151,7 @@
         "1": 46
       },
       "flags": {},
-      "order": 10,
+      "order": 11,
       "mode": 0,
       "inputs": [
         {
@@ -199,7 +199,7 @@
         "1": 106
       },
       "flags": {},
-      "order": 11,
+      "order": 12,
       "mode": 0,
       "inputs": [
         {
@@ -249,88 +249,6 @@
       }
     },
     {
-      "id": 10,
-      "type": "VAEDecode",
-      "pos": {
-        "0": 2386,
-        "1": 142,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
-      },
-      "size": {
-        "0": 210,
-        "1": 46
-      },
-      "flags": {},
-      "order": 12,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "samples",
-          "type": "LATENT",
-          "link": 26
-        },
-        {
-          "name": "vae",
-          "type": "VAE",
-          "link": 27
-        }
-      ],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            28
-          ],
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "VAEDecode"
-      }
-    },
-    {
-      "id": 12,
-      "type": "PreviewImage",
-      "pos": {
-        "0": 2610,
-        "1": 286,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
-      },
-      "size": [
-        437.35290061160777,
-        359.0870188156284
-      ],
-      "flags": {},
-      "order": 13,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 28
-        }
-      ],
-      "outputs": [],
-      "properties": {
-        "Node name for S&R": "PreviewImage"
-      }
-    },
-    {
       "id": 14,
       "type": "LoraLoader",
       "pos": {
@@ -350,7 +268,7 @@
         "1": 126
       },
       "flags": {},
-      "order": 7,
+      "order": 8,
       "mode": 0,
       "inputs": [
         {
@@ -393,89 +311,6 @@
       ]
     },
     {
-      "id": 2,
-      "type": "UNETLoader",
-      "pos": {
-        "0": 119,
-        "1": 44,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
-      },
-      "size": {
-        "0": 315,
-        "1": 82
-      },
-      "flags": {},
-      "order": 2,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            29
-          ],
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "UNETLoader"
-      },
-      "widgets_values": [
-        "flux_dev.safetensors",
-        "fp8_e4m3fn"
-      ]
-    },
-    {
-      "id": 3,
-      "type": "DualCLIPLoader",
-      "pos": {
-        "0": 109,
-        "1": 385,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
-      },
-      "size": {
-        "0": 315,
-        "1": 106
-      },
-      "flags": {},
-      "order": 3,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "CLIP",
-          "type": "CLIP",
-          "links": [
-            30
-          ],
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "DualCLIPLoader"
-      },
-      "widgets_values": [
-        "clip_l.safetensors",
-        "t5xxl_fp8_e4m3fn.safetensors",
-        "flux"
-      ]
-    },
-    {
       "id": 13,
       "type": "LoraLoader",
       "pos": {
@@ -495,7 +330,7 @@
         "1": 126
       },
       "flags": {},
-      "order": 6,
+      "order": 7,
       "mode": 0,
       "inputs": [
         {
@@ -556,7 +391,7 @@
         "1": 200
       },
       "flags": {},
-      "order": 9,
+      "order": 10,
       "mode": 0,
       "inputs": [
         {
@@ -583,11 +418,11 @@
       ]
     },
     {
-      "id": 6,
-      "type": "EmptyLatentImage",
+      "id": 3,
+      "type": "DualCLIPLoader",
       "pos": {
-        "0": 722,
-        "1": 483,
+        "0": 159,
+        "1": 334,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -602,7 +437,130 @@
         "1": 106
       },
       "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            30
+          ],
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "DualCLIPLoader"
+      },
+      "widgets_values": [
+        "clip_l.safetensors",
+        "t5xxl_fp8_e4m3fn.safetensors",
+        "flux"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "UNETLoader",
+      "pos": {
+        "0": 133,
+        "1": 14,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0
+      },
+      "size": {
+        "0": 315,
+        "1": 82
+      },
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            29
+          ],
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "UNETLoader"
+      },
+      "widgets_values": [
+        "flux_dev.safetensors",
+        "fp8_e4m3fn"
+      ]
+    },
+    {
+      "id": 8,
+      "type": "KSamplerSelect",
+      "pos": {
+        "0": 1048,
+        "1": 692,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0
+      },
+      "size": {
+        "0": 315,
+        "1": 58
+      },
+      "flags": {},
       "order": 4,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "SAMPLER",
+          "type": "SAMPLER",
+          "links": [
+            19
+          ],
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "KSamplerSelect"
+      },
+      "widgets_values": [
+        "euler"
+      ]
+    },
+    {
+      "id": 6,
+      "type": "EmptyLatentImage",
+      "pos": {
+        "0": 688,
+        "1": 461,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0
+      },
+      "size": {
+        "0": 315,
+        "1": 106
+      },
+      "flags": {},
+      "order": 5,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -625,11 +583,141 @@
       ]
     },
     {
-      "id": 8,
-      "type": "KSamplerSelect",
+      "id": 10,
+      "type": "VAEDecode",
       "pos": {
-        "0": 1097,
-        "1": 646,
+        "0": 2386,
+        "1": 142,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0
+      },
+      "size": {
+        "0": 210,
+        "1": 46
+      },
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "samples",
+          "type": "LATENT",
+          "link": 26
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 27
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            33
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VAEDecode"
+      }
+    },
+    {
+      "id": 16,
+      "type": "LoadImage",
+      "pos": {
+        "0": 2199,
+        "1": 599,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0
+      },
+      "size": [
+        315,
+        314
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            34
+          ],
+          "shape": 3
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "00020-3960590817.png",
+        "image"
+      ]
+    },
+    {
+      "id": 12,
+      "type": "PreviewImage",
+      "pos": {
+        "0": 3042,
+        "1": 121,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0
+      },
+      "size": [
+        437.35290061160777,
+        359.0870188156284
+      ],
+      "flags": {},
+      "order": 15,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 35
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "PreviewImage"
+      }
+    },
+    {
+      "id": 15,
+      "type": "ReActorFaceSwap",
+      "pos": {
+        "0": 2626,
+        "1": 451,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -641,27 +729,65 @@
       },
       "size": {
         "0": 315,
-        "1": 58
+        "1": 358
       },
       "flags": {},
-      "order": 5,
+      "order": 14,
       "mode": 0,
-      "inputs": [],
+      "inputs": [
+        {
+          "name": "input_image",
+          "type": "IMAGE",
+          "link": 33
+        },
+        {
+          "name": "source_image",
+          "type": "IMAGE",
+          "link": 34
+        },
+        {
+          "name": "face_model",
+          "type": "FACE_MODEL",
+          "link": null
+        },
+        {
+          "name": "face_boost",
+          "type": "FACE_BOOST",
+          "link": null
+        }
+      ],
       "outputs": [
         {
-          "name": "SAMPLER",
-          "type": "SAMPLER",
+          "name": "IMAGE",
+          "type": "IMAGE",
           "links": [
-            19
+            35
           ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "FACE_MODEL",
+          "type": "FACE_MODEL",
+          "links": null,
           "shape": 3
         }
       ],
       "properties": {
-        "Node name for S&R": "KSamplerSelect"
+        "Node name for S&R": "ReActorFaceSwap"
       },
       "widgets_values": [
-        "euler"
+        true,
+        "inswapper_128.onnx",
+        "retinaface_resnet50",
+        "GPEN-BFR-512.onnx",
+        1,
+        1,
+        "no",
+        "no",
+        "0",
+        "0",
+        1
       ]
     }
   ],
@@ -755,14 +881,6 @@
       "VAE"
     ],
     [
-      28,
-      10,
-      0,
-      12,
-      0,
-      "IMAGE"
-    ],
-    [
       29,
       2,
       0,
@@ -793,16 +911,40 @@
       14,
       1,
       "CLIP"
+    ],
+    [
+      33,
+      10,
+      0,
+      15,
+      0,
+      "IMAGE"
+    ],
+    [
+      34,
+      16,
+      0,
+      15,
+      1,
+      "IMAGE"
+    ],
+    [
+      35,
+      15,
+      0,
+      12,
+      0,
+      "IMAGE"
     ]
   ],
   "groups": [],
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.424097618372485,
+      "scale": 0.38554328942953164,
       "offset": [
-        1338.6776995517785,
-        1020.4356564832624
+        1256.2132965578785,
+        1005.3413085796795
       ]
     }
   },
